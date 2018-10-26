@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^spec/}) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'capistrano', '~> 3.1'
+  spec.add_dependency 'capistrano'
+  spec.add_dependency 'capistrano-sidekiq'
   spec.add_dependency 'sshkit'
 end
