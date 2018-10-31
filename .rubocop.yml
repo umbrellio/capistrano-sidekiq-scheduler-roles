@@ -1,0 +1,15 @@
+inherit_gem:
+  rubocop-config-umbrellio: lib/rubocop.yml
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.5
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Naming/FileName:
+  Enabled: false

@@ -21,4 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'capistrano'
   spec.add_dependency 'capistrano-sidekiq'
   spec.add_dependency 'sshkit'
+
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rubocop-config-umbrellio'
 end
