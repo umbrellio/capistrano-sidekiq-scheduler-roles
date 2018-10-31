@@ -1,4 +1,5 @@
 ## capistrano-sidekiq-scheduler-roles
+[![Gem Version](https://badge.fury.io/rb/capistrano-sidekiq-scheduler-roles.svg)](https://badge.fury.io/rb/capistrano-sidekiq-scheduler-roles)
 
 A gem for configuring sidekiq-scheduler via capistrano roles
 
@@ -7,7 +8,7 @@ A gem for configuring sidekiq-scheduler via capistrano roles
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem "capistrano-sidekiq-scheduler-roles", git: "https://github.com/umbrellio/capistrano-sidekiq-scheduler-roles.git"
+gem "capistrano-sidekiq-scheduler-roles"
 ```
 
 And then execute:
