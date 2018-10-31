@@ -14,7 +14,7 @@ namespace :sidekiq_scheduler_roles do
       sidekiq_config = YAML.load(capture(:cat, config_path))
 
       schedule = sidekiq_config[:schedule]
-      return unless schedule
+      next unless schedule
 
       schedule.each_key do |key|
         roles = schedule[key].delete('roles')
