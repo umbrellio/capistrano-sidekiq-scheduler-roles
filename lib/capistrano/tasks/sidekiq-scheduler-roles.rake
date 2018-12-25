@@ -12,6 +12,7 @@ namespace :sidekiq_scheduler_roles do
       config_path = fetch(:sidekiq_path, release_path).join('config', 'sidekiq.yml')
 
       sidekiq_config = YAML.load(capture(:cat, config_path))
+      next unless sidekiq_config
 
       schedule = sidekiq_config[:schedule]
       next unless schedule
